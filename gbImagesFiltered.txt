@@ -1,0 +1,1151 @@
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/clinical-education-support/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/contactus/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/accesshealthcare/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/contactusproduct/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/contactusimage/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/contactusgeneral/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/corp-responsibility/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/corporategiving/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2019/04/banner-global-giving2-d.jpg.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/employeevolunteer/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/edi/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/credo/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/ehm-guidelines-and-reporting-obligations/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/europe-ems-policy/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/events/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/every-heartbeat-matters/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/global-locations/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/heartbeat/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/global-giving-objectives/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/home/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/uploads/2018/08/corp-d.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/news-releases/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/ourhistory/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/uploads/2018/11/banner-history-d.jpg
+https://dev.edwards.com/wp-content/uploads/2018/11/sddefault-e1542182457453.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/pastgrant/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/ourleaders/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/patient-stories/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/philanthropy/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/political-disclosure/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/aboutus/physicians-finance/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/aboutus/reimbursement/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/aboutus/romanian-financial-relationships/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/aboutus/what-we-do/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/andy-test-page/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/careers/benefits/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/careers/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/advanced-hemodynamic-monitoring/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/edwards/microsite/xt-reimbursement/resources/smallpdf.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/careers/development-programs/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/careers/diversity-inclusion/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/careers/internships/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/careers/finance-development-program/
+https://edwardsprod.blob.core.windows.net/media/Default/careers/finance_whatwedo.jpg
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Default/careers/finance_howtoapply.jpg
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Default/careers/finance_rotationschedule.jpg
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/careers/locations/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/careers/home/
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2019/04/corp-2-d.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/careers/meet-our-employees/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/careers/our-culture/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/careers/professional-development/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/careers/recruitingcalender/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/careers/tdp/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/careers/professionalareas/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/clinicaleducation-2/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/careers/universityengineeringprogram/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/careers/universitysummerprogram/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/careers/workinghere/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/accessories/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/clinicaleducation/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/accessories/vascushunt-ii-silicone-carotid-shunt/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/accessories/atraumatic-occlusion/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/annuloplasty/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/annuloplasty/mitral-heart-valve-repair/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Default/devices/annuloplasty%20rings/mitral%20repair/pii_model.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2018/08/mitral-valve-repair.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/catheters/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/annuloplasty/tricuspid-heart-valve-repair/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/catheters/clot-management/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/catheters/clot%20management/latex.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/catheters/arterial-cannulae/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/catheters/general-surgery/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/catheters/occlusion-2/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/catheters/occlusion/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/central-venous-access/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/catheters/vascular/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/central-venous-access/ava-3xi/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/central-venous-access/ava-high-flow/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/decision-software/hpi/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/decision%20support%20software/ppv.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/decision%20support%20software/npv.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/aortic/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/centera/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/centera-valve.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/998x455.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/decision-software/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/aortic-pericardial/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/1130.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/1126icon.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/magna_tray.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/3000_md.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/2700_md.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/magnaindividualsizer.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/1111new-2.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/3300tfx.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/intuity/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/resilia/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/mitral/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/theon-model.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/mmemodel.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/hvt/mmespecimage.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/sapien-xt-valve/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/transcatheter-sapien-xt-valve-pulmonic/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/surgical-valve-technologies/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/transcatheter-sapien-3-ultra/
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-redesigned-distal.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-axela-focus.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-outer-sealing-skirt.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-axela-exp-cont.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-axela-swivel.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-frame-design.gif
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-proven-valve-tissue.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-balloon-design.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/sapien3-ultra-sm.png
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-ds-flex.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/transcatheter-sapien-3/
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/sizes.png
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/disabling-stroke-large.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-outer-sealing-skirt.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien3/s3-data-brochure.png
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/stroke-sm.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien3/commander-brochure-link-1.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien3/certitude-brochure-link-1.png
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/see-clinical-difference-chart.png
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/all-cause-mortality-large.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien3/globedesktop.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/sign-up.png
+https://edwardsprod.blob.core.windows.net/media/Default/sapien3/fall-2017/mortality-sm.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien3/lancet-brochure-link-gb.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-frame-design.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/sapien-3-ultra/s3u-proven-valve-tissue.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/heart-valves/transcatheter/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/acumen-analytics/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/clearsight/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/ev1000/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/volumeviewman.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/ev1000-clinical-platform/oximetry-central-venous-catheter.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/flotrac-sensor.jpg
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/monitoring-platforms/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/flotrac/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/frank-starling-2.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/svv.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/hemosphere/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/oximetry-central-venous-catheter/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/cv%20oxi%20catheter/cv-oxi-top-cath-imgs3.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/pediasat-catheter/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/swan-ganz-catheters/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/tissue-oximetry/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/tissue-oximetry/thankyou/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/monitoring/hemodynamic%20monitoring/hemo-cockpit.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/home/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/volumeview/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/minimal-incision-mvr-avr/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/pressure-monitoring/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/hemodynamic-monitoring/vigileo-monitor/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/pressure-monitoring/closed-blood-sampling/
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/vamp-jr-thumb-e1558003160336.jpg
+https://edwardsdev.wpengine.com/wp-content/uploads/2018/11/truclip-thumb.jpg
+https://edwardsdev.wpengine.com/wp-content/uploads/2018/11/truwave-thumb.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/vamp-adult-thumb-e1558001177550.jpg
+https://edwardsdev.wpengine.com/wp-content/uploads/2018/11/flotrac_bannerthumbnail.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsdev.wpengine.com/wp-content/uploads/2018/11/swan-ganz_bannerthumbnail.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/vamp-plus-thumb-e1558002730661.jpg
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/pressure-monitoring/truclip-holder/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/transcatheter-valve-repair/cardiobandmitralsystem/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/devices/pressure-monitoring/transducer/
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/img_0114.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/img_0138.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2018/09/IMG_0033-300x277.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/img_0017-e1557996175874.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/img_0044-e1557994283744.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/05/img_0105.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/devices/transcatheter-valve-repair/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/devices/transcatheter-valve-repair/pascal/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/clinical-challenge.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/3-planes.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart%20valves/transcatheter/excellent-safety-profile.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/optimized-leaflet-capture.jpg
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/devices/transcatheter-valve-repair/cardiobandtricuspidsystem/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/download-pgdt-analytics/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/education/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/ehm-guidelines-and-reporting-obligations/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/esicm2016/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/clarity1.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/clarity2.jpg
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/forms/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/edwards-lunch-symposium-the-esicm-lives-congress-2015/
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/pgdtfig1.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/maurizio.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/pgdtfig2.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/pgdtfig3.jpg
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/jvl_image.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/shows/cuff_cutaway.jpg
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/forms/request-a-copy-of-sepsis-bundle-guidelines-overview/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/harpoon-beating-heart-mitral-valve-system/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/investors/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/legal/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/icu-solutions/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/legal/cookie-statement/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/legal/correct-change-personal-information-copy/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/legal/correct-change-personal-information/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/legal/legalterms/
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2019/04/corp-2-d.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/legal/questions-concerns-about-personal-information/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/legal/remove-info-under-age-13/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/legal/privacypolicy/
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2019/04/corp-2-d.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/legal/remove-personal-information/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/new-releases/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsdev.wpengine.com/wp-content/uploads/2019/04/banner-press-m-1.jpg
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/patients/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/patients/faq/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2019/04/patients-faq-d.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/patients/glossary/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/patients/patient-information/
+https://edwardsprod.blob.core.windows.net/media/Default/patients/chambersoftheheart.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/systole-1.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/diastole-1.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_4.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_8.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_3.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_6.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_5.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_7.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/tavr-procedure.png
+https://edwardsprod.blob.core.windows.net/media/Default/patients/figure_9.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/patients/patient-voice-form/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/patients/patient-events-and-opportunities-interest-form/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/procedures/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/patients/patient-voice/
+https://edwardsprod.blob.core.windows.net/media/Gb/about%20us/womenheart.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/about%20us/(pcori).jpg
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/awareness/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-awareness.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/partner/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-partner-trial.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/guidelines/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-treatment.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/options/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-new-treatment.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/evaluation/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-heart-team.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/progression/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-progression.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/results/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-results-1.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-results-2.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/prevalence/
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-prevalence-chart.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/referral/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-non-referral.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-non-referral-2.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/specialty-teams/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/specialty-teams-2/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/site-map/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/procedures/aorticstenosis/standard/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/aortic-stenosis/as-gold-standard.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/specialty-teams/heart-team/
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-valvecoord.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-intervcardio.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-cardcathlabstaff.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-echocard.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-cardiosurg.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-refcard.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/devices/heart valves/transcatheter/circlepicker-anesth.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/test/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/therapies/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/therapies/blood-management/
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/bloodmanagement/reducebloodloss.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/bloodmanagement/iatrogenicanemia.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/bloodmanagement/transfusionneeds.png
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/bloodmanagement/bloodstreaminfections.png
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/therapies/hypotension-management-2/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/specialty-teams/icu-solutions/
+https://edwardsprod.blob.core.windows.net/media/Gb/specialty%20teams/icu-solutions/clinical-uses-of-svo2-and-scv02-monitoring.png
+https://edwardsprod.blob.core.windows.net/media/Gb/specialty%20teams/icu-solutions/advanced-hemodynamic-parameters.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/specialty%20teams/icu-solutions/cockpit-screen-on-ev1000-clinical-platform.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/therapies/hypotension-management/
+https://dev.edwards.com/wp-content/uploads/2019/04/fluid-mgmt_14.jpg
+https://dev.edwards.com/wp-content/uploads/2019/04/fluid-mgmt_20-1.jpg
+https://dev.edwards.com/wp-content/uploads/2019/04/fluid-mgmt_26.jpg
+https://edwardsprod.blob.core.windows.net/media/Gb/therapies/hypotension/hypo-pgdt.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/uploads/2019/04/hypotension_27.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/therapies/fluid-management/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/uploads/2019/04/fluid-mgmt-volume-matters.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/therapies/registernow/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/trialsolutions/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/try/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/unsubscribe-remove-from-mailing-lists/
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/therapies/or-solutions-for-esr/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-1 fetched URL:https://dev.edwards.com/gb/xvrdms-8179/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com
+END
+
+
+Thread-3 fetched URL:https://dev.edwards.com/gb/xvrtestpage/
+https://edwardsprod.blob.core.windows.net/media/Gb/specialty%20teams/icu-solutions/clinical-uses-of-svo2-and-scv02-monitoring.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/specialty%20teams/icu-solutions/cockpit-screen-on-ev1000-clinical-platform.png
+END
+
+
+Thread-4 fetched URL:https://dev.edwards.com/gb/xt-reimbursement/
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+https://edwardsprod.blob.core.windows.net/media/Gb/edwards/microsite/xt-reimbursement/resources/smallpdf.gif
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+END
+
+
+Thread-2 fetched URL:https://dev.edwards.com/gb/welcome-to-edwards-lifesciences/
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2018/10/home-sustain.png
+https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2018/10/home-corp-tile.jpg
+https://edwardsuatwp.azurewebsites.net/wp-content/uploads/2018/10/home-nhv-tile.jpg
+https://dev.edwards.com
+https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif
+END
+
+
+---URL scraping time 340.0721504688263 seconds for gb urls with /sites/ ---
