@@ -1,18 +1,19 @@
-from Image import Save
+import os.path
+import sys
+import threading
+import time
+from queue import Queue
 from Models.Complete.Image import Image
 from Models.Complete.Link import Link
-import os.path;
-from Crawler.Page import Page
+from Models.Complete.Table import Table
+
+import functions
 from Crawler.Image import Image
 from Crawler.Link import Link
+from Crawler.Page import Page
+from Crawler.Table import Table
+from Image import Save
 from Image.Download import Download
-import functions
-import threading
-from queue import Queue
-import sys
-import time
-
-
 
 URL = sys.argv[1]
 
@@ -51,21 +52,55 @@ if __name__ == '__main__':
         while True:
             try:
                 link = queue.get()
+                
+                html = ""
+                if(link in visited):
+                    html = visited[link]
 
-                img = Image(link)
-                images = img.fetch_links()
+                img = Image(link) #TODO add a param for html
+                if(link in visited):
+                    html = visited[link]
+                images = img.fetch_links(html)
+                visited[link] = img.html_string
+                images = filterNonImages(images, '/sites/4/')
 
+                
                 linkOBJ = Link(link)
-                linksOBJ = linkOBJ.fetch_links()
+                if(link in visited):
+                    html = visited[link]
+                linksOBJ = linkOBJ.fetch_links(html)
+                visited[link] = linkOBJ.html_string
+                linksOBJ = filterNonLinks(linksOBJ, '/gb/')
 
-                print(threading.current_thread().name + ' fetched URL:' + link)
-                print('------Links-----')
-                printJSON(linksOBJ)
-                images = filterNonImages(images, '/sites/')
-                printJSON(images)
-                print('END\n\n')
+
+                # table = Table(link) #TODO add a param for html
+                # if(link in visited):
+                    # html = visited[link]
+                # tables = table.fetch_links(html)
+                # visited[link] = table.html_string
+
+                if(len(linksOBJ)>0 or len(images)>0):
+                    print(threading.current_thread().name + ' fetched URL:' + link)
+
+                if(len(linksOBJ)>0):
+                    print('------Links-----')
+                    printJSON(linksOBJ)
+
+                if(len(images)>0):
+                    print('\n\n------Images-----')
+                    printJSON(images)
+
+                if(len(linksOBJ)>0 or len(images)>0):
+                    print('END\n\n')
+
                 # down = Download(links=images, path=functions.get_folder_name(link))
                 # down.start()
+
+                # print('\n\n------Tables class-----')
+                # if(len(tables)> 0):
+                #     printJSON(tables)
+
+
                 queue.task_done()
                 if queue.empty():
                     break
@@ -75,10 +110,10 @@ if __name__ == '__main__':
 
     def scrapeLinks(page, URL, links, visited):
         if page.page_url not in visited:
-            visited.add(page.page_url)
             l1 = len(links)
             linksFound = filterURL(page.fetch_links(), URL)
             links = links.union(linksFound)
+            visited[page.page_url] = page.html_string
             if l1 == len(links):
                 return links
             print('found', len(links), 'visited', len(visited))
@@ -92,10 +127,15 @@ if __name__ == '__main__':
         return [ x for x in set(links) if (URL) in x ]
         
     def filterNonImages(images, delim):
-        return [ x for x in set(images) if delim not in x ]
+        return [ x for x in set(images) if delim not in x and 
+                    x != 'https://dev.edwards.com/wp-content/mu-plugins/app/vendor/edwards/toolkit-php-components/dist/images//logo-white-text.png'  and 
+                    x != 'https://dev.edwards.com/wp-content/plugins/ed-button/assets/images/ajax-loader.gif']
+    
+    def filterNonLinks(links, delim):
+        return [ x for x in set(links) if delim not in x ]
         
     links = set()
-    # visited = set()
+    visited = {}
     # start_time = time.time()
     # links = scrapeLinks(page, URL, links, visited)
     # printJSON(links)
@@ -103,6 +143,7 @@ if __name__ == '__main__':
 
 
     start_time = time.time()
+    #GB
     links = {
     'https://dev.edwards.com/gb/aboutus/',
     'https://dev.edwards.com/gb/aboutus/clinical-education-support/',
@@ -222,7 +263,6 @@ if __name__ == '__main__':
     'https://dev.edwards.com/gb/forms/request-a-copy-of-sepsis-bundle-guidelines-overview/',
     'https://dev.edwards.com/gb/harpoon-beating-heart-mitral-valve-system/',
     'https://dev.edwards.com/gb/',
-    'https://dev.edwards.com/gb/icu-solutions/',
     'https://dev.edwards.com/gb/investors/',
     'https://dev.edwards.com/gb/legal/',
     'https://dev.edwards.com/gb/legal/cookie-statement/',
@@ -272,6 +312,102 @@ if __name__ == '__main__':
     'https://dev.edwards.com/gb/xvrdms-8179/',
     'https://dev.edwards.com/gb/xvrtestpage/'
     }
+    
+    #ch-en
+    # links = {
+    # 'https://dev.edwards.com/ch-en/aboutus/',
+    # 'https://dev.edwards.com/ch-en/aboutus/contactusgeneral/',
+    # 'https://dev.edwards.com/ch-en/aboutus/corp-responsibility/',
+    # 'https://dev.edwards.com/ch-en/aboutus/employeevolunteer/',
+    # 'https://dev.edwards.com/ch-en/aboutus/europe-ems-policy/',
+    # 'https://dev.edwards.com/ch-en/aboutus/heartbeat/',
+    # 'https://dev.edwards.com/ch-en/aboutus/ehm-guidelines-and-reporting-obligations/',
+    # 'https://dev.edwards.com/ch-en/aboutus/corporategiving/',
+    # 'https://dev.edwards.com/ch-en/aboutus/global-giving-objectives/',
+    # 'https://dev.edwards.com/ch-en/aboutus/pastgrant/',
+    # 'https://dev.edwards.com/ch-en/aboutus/accesshealthcare/',
+    # 'https://dev.edwards.com/ch-en/aboutus/global-locations/',
+    # 'https://dev.edwards.com/ch-en/aboutus/news-releases/',
+    # 'https://dev.edwards.com/ch-en/aboutus/credo/',
+    # 'https://dev.edwards.com/ch-en/aboutus/ourhistory/',
+    # 'https://dev.edwards.com/ch-en/aboutus/ourleaders/',
+    # 'https://dev.edwards.com/ch-en/aboutus/philanthropy/',
+    # 'https://dev.edwards.com/ch-en/aboutus/what-we-do/',
+    # 'https://dev.edwards.com/ch-en/aboutus/who-we-are/',
+    # 'https://dev.edwards.com/ch-en/aboutus/home/',
+    # 'https://dev.edwards.com/ch-en/careers/',
+    # 'https://dev.edwards.com/ch-en/careers/benefits/',
+    # 'https://dev.edwards.com/ch-en/careers/home/',
+    # 'https://dev.edwards.com/ch-en/careers/diversity-inclusion/',
+    # 'https://dev.edwards.com/ch-en/careers/locations/',
+    # 'https://dev.edwards.com/ch-en/careers/meet-our-employees/',
+    # 'https://dev.edwards.com/ch-en/careers/our-culture/',
+    # 'https://dev.edwards.com/ch-en/careers/professionalareas/',
+    # 'https://dev.edwards.com/ch-en/careers/workinghere/',
+    # 'https://dev.edwards.com/ch-en/',
+    # 'https://dev.edwards.com/ch-en/legal/',
+    # 'https://dev.edwards.com/ch-en/legal/cookie-statement/',
+    # 'https://dev.edwards.com/ch-en/legal/correct-change-personal-information/',
+    # 'https://dev.edwards.com/ch-en/legal/legalterms/',
+    # 'https://dev.edwards.com/ch-en/legal/privacypolicy/',
+    # 'https://dev.edwards.com/ch-en/legal/questions-concerns-about-personal-information/',
+    # 'https://dev.edwards.com/ch-en/legal/remove-info-under-age-13/',
+    # 'https://dev.edwards.com/ch-en/legal/remove-personal-information/',
+    # 'https://dev.edwards.com/ch-en/legal/unsubscribe-remove-from-mailing-lists/',
+    # 'https://dev.edwards.com/ch-en/patients/',
+    # 'https://dev.edwards.com/ch-en/patients/faq/',
+    # 'https://dev.edwards.com/ch-en/patients/glossary/',
+    # 'https://dev.edwards.com/ch-en/patients/patient-events-and-opportunities-interest-form/',
+    # 'https://dev.edwards.com/ch-en/patients/patient-information/',
+    # 'https://dev.edwards.com/ch-en/patients/patient-voice/',
+    # 'https://dev.edwards.com/ch-en/patients/patient-voice-form/',
+    # 'https://dev.edwards.com/ch-en/site-map/',
+    # 'https://dev.edwards.com/ch-en/xvrdms-8179/'
+    # }
+
+    #links = {
+    #'https://dev.edwards.com/cr/aboutus/',
+    #'https://dev.edwards.com/cr/aboutus/accesshealthcare/',
+    #'https://dev.edwards.com/cr/aboutus/pastgrant/',
+    #'https://dev.edwards.com/cr/aboutus/heartbeat/',
+    #'https://dev.edwards.com/cr/aboutus/news-releases/',
+    #'https://dev.edwards.com/cr/aboutus/contactusgeneral/',
+    #'https://dev.edwards.com/cr/aboutus/ehm-guidelines-and-reporting-obligations/',
+    #'https://dev.edwards.com/cr/aboutus/corporategiving/',
+    #'https://dev.edwards.com/cr/aboutus/philanthropy/',
+    #'https://dev.edwards.com/cr/aboutus/ourhistory/',
+    #'https://dev.edwards.com/cr/aboutus/credo/',
+    #'https://dev.edwards.com/cr/aboutus/ourleaders/',
+    #'https://dev.edwards.com/cr/aboutus/global-giving-objectives/',
+    #'https://dev.edwards.com/cr/aboutus/what-we-do/',
+    #'https://dev.edwards.com/cr/aboutus/home/',
+    #'https://dev.edwards.com/cr/aboutus/corp-responsibility/',
+    #'https://dev.edwards.com/cr/aboutus/global-locations/',
+    #'https://dev.edwards.com/cr/aboutus/employeevolunteer/',
+    #'https://dev.edwards.com/cr/careers/',
+    #'https://dev.edwards.com/cr/careers/professionalareas/',
+    #'https://dev.edwards.com/cr/careers/benefits/',
+    #'https://dev.edwards.com/cr/careers/home/',
+    #'https://dev.edwards.com/cr/careers/meet-our-employees/',
+    #'https://dev.edwards.com/cr/careers/diversity-inclusion/',
+    #'https://dev.edwards.com/cr/careers/our-culture/',
+    #'https://dev.edwards.com/cr/careers/locations/',
+    #'https://dev.edwards.com/cr/careers/workinghere/',
+    #'https://dev.edwards.com/cr/',
+    #'https://dev.edwards.com/cr/legal/',
+    #'https://dev.edwards.com/cr/legal/remove-info-under-age-13/',
+    #'https://dev.edwards.com/cr/legal/privacypolicy/',
+    #'https://dev.edwards.com/cr/legal/legalterms/',
+    #'https://dev.edwards.com/cr/site-map/',
+    #'https://dev.edwards.com/cr/patients/',
+    #'https://dev.edwards.com/cr/patients/glossary/',
+    #'https://dev.edwards.com/cr/patients/patient-information/',
+    #'https://dev.edwards.com/cr/patients/faq/',
+    #'https://dev.edwards.com/cr/patients/implantpatientregistry/',
+    #'https://dev.edwards.com/cr/patients/patient-voice/',
+    #'https://dev.edwards.com/cr/cartago/'
+    #}
+
     create_workers()
     create_jobs()
     print("---URL scraping time %s seconds for gb urls with /sites/ ---" % (time.time() - start_time))

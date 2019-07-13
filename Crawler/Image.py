@@ -9,6 +9,7 @@ class Image:
 
         self.image = Models.Queue.Image.Image()
         self.link = Models.Queue.Link.Link()
+        self.html_string = ""
 
         self.page_url = page_url
         urlres = urllib.parse.urlparse(page_url)
@@ -21,13 +22,17 @@ class Image:
             self.images.add(full_url)
         return self
 
-    def fetch_links(self):
+    def fetch_links(self, html):
         """
         Get all the anchor tag url from the website
         :return:
         """
         img_finder = ImgFinder(self.page_url)
-        img_finder.feed(img_finder.html_string())
+        if(html == ""):
+            self.html_string = img_finder.html_string()
+        else:
+            self.html_string = html
+        img_finder.feed('<html></html>' if  self.html_string == None else self.html_string)
         self.images = img_finder.get_values()
         return self.images
 

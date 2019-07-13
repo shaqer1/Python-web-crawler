@@ -11,7 +11,6 @@ class Page:
     def __init__(self, page_url):
         self.link = Models.Queue.Link.Link()
         self.html_string = ""
-        self.html_time = 0
         self.page_url = page_url
         self.link.add(page_url)
         urlres = urllib.parse.urlparse(page_url)
@@ -25,14 +24,16 @@ class Page:
             self.link.add(full_url)
         return self
 
-    def fetch_links(self):
+    def fetch_links(self, html):
         """
         Get all the anchor tag url from the website
         :return:
         """
         url_finder = LinkFinder(self.page_url)
-        if(abs(time.time() - self.html_time) > (20*60*1000)):
+        if(html == ""):
             self.html_string = url_finder.html_string()
+        else:
+            self.html_string = html
         url_finder.feed( '<html></html>' if  self.html_string == None else self.html_string )
         self.links = url_finder.get_values()
         return self.links

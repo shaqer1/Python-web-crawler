@@ -9,7 +9,7 @@ class Link:
 
         self.LinkExt = Models.Queue.Link.Link()
         self.link = Models.Queue.Link.Link()
-
+        self.html_string = ""
         self.page_url = page_url
         urlres = urllib.parse.urlparse(page_url)
         self.base_url = urlres.netloc
@@ -21,13 +21,17 @@ class Link:
             self.linksSet.add(full_url)
         return self
 
-    def fetch_links(self):
+    def fetch_links(self, html):
         """
         Get all the anchor tag url from the website
         :return:
         """
         link_finder = LinkFinder(self.page_url)
-        link_finder.feed(link_finder.html_string())
+        if(html == ""):
+            self.html_string = link_finder.html_string()
+        else:
+            self.html_string = html
+        link_finder.feed('<html></html>' if  self.html_string == None else self.html_string)
         self.linksSet = link_finder.get_values()
         return self.linksSet
 
