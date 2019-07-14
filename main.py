@@ -54,6 +54,8 @@ if __name__ == '__main__':
                     for item in linksFound:
                         item = item.strip()
                         if item not in domaincrwlQ.queue and item not in visited:
+                            if item[-1]=='/':
+                                item=item[0:-1]
                             domaincrwlQ.put(item)
                     
                     checkUnique(visited)
@@ -186,7 +188,7 @@ if __name__ == '__main__':
     createDomainWorkers()
     domaincrwlQ.put(URL+ '/site-map') #TODO add option
     domaincrwlQ.join()
-    # print(visited.keys)
+    print(len(visited.keys()))
     print("---URL scraping time %s seconds ---" % (time.time() - start_time))
 
 
