@@ -10,7 +10,7 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/main.py",
-            "args": ["https://dev.edwards.com/gb"],
+            "args": ["-u","https://dev.edwards.com/gb","-e","gb","-l","/gb/","-i","/sites/4/"],
             "console": "integratedTerminal"
         }
     ]
