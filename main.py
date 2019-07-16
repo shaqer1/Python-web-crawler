@@ -6,6 +6,7 @@ from queue import Queue
 from Models.Complete.Image import Image
 from Models.Complete.Link import Link
 from Models.Complete.Table import Table
+import math
 
 import functions
 from Crawler.Image import Image
@@ -21,7 +22,7 @@ usage = 'usage: TODO'
 if __name__ == '__main__':
     params = {}
 
-    if len(sys.argv)%2!=1:
+    if len(sys.argv)%2!=1: #TODO add extension for start and baseurl,
         print('wrong number of args', usage)
         quit()
 
@@ -38,7 +39,7 @@ if __name__ == '__main__':
     threads = []
     lock = threading.Lock()
 
-    page = Page(URL+ '/site-map')
+    page = Page(URL + ('' if 'ext' not in params else params['ext']))
     links = set()
     visited = {}
 
@@ -58,7 +59,7 @@ if __name__ == '__main__':
                 if page.page_url not in visited:
                     linksFound = filterURL(page.fetch_links(""), URL)
                     visited[page.page_url] = page.html_string
-                    l1 = domaincrwlQ.qsize() +len(visited)+1
+                    # l1 = domaincrwlQ.qsize() +len(visited)+1
                     with lock:
                         print(threading.current_thread().name + ' fetched URL:' + link)
                     
@@ -134,12 +135,12 @@ if __name__ == '__main__':
                     visited[link] = linkOBJ.html_string
                     linksOBJ = filterNonLinks(linksOBJ, params['l'])
 
-
-                # table = Table(link) #TODO add a param for html
-                # if(link in visited):
-                    # html = visited[link]
-                # tables = table.fetch_links(html)
-                # visited[link] = table.html_string
+                if 't' in params:
+                    table = Table(link) #TODO add a param for html
+                    if(link in visited):
+                        html = visited[link]
+                    tables = table.fetch_links(html)
+                    visited[link] = table.html_string
 
                 with lock:
                     if(len(linksOBJ)>0 or len(images)>0):
@@ -152,17 +153,16 @@ if __name__ == '__main__':
                     if(len(images)>0):
                         print('\n\n------Images-----')
                         printJSON(images)
+                    
+                    if(len(tables)> 0):
+                        print('\n\n------Tables class-----')
+                        printJSON(tables)
 
                     if(len(linksOBJ)>0 or len(images)>0):
                         print('END\n\n')
 
                 # down = Download(links=images, path=functions.get_folder_name(link))
                 # down.start()
-
-                # print('\n\n------Tables class-----')
-                # if(len(tables)> 0):
-                #     printJSON(tables)
-
 
                 queue.task_done()
                 if queue.empty():
@@ -171,17 +171,17 @@ if __name__ == '__main__':
                 queue.task_done()
                 continue
 
-    def scrapeLinks(page, URL, links, visited):
-        if page.page_url not in visited:
+    def scrapeLinks(page, URL, links, visited, count, final):
+        if page.page_url not in visited and count < final:
             l1 = len(links)
-            linksFound = filterURL(page.fetch_links(), URL)
+            linksFound = filterURL(page.fetch_links(""), URL)
             links = links.union(linksFound)
             visited[page.page_url] = page.html_string
             if l1 == len(links):
                 return links
             print('found', len(links), 'visited', len(visited))
             for link in links:
-                links = scrapeLinks(Page(link), URL, links, visited)
+                links = scrapeLinks(Page(link), URL, links, visited, count+1, final)
             return links
         return links
     
@@ -199,11 +199,13 @@ if __name__ == '__main__':
         
     if 'e' not in params:
         start_time = time.time()
-        # links = scrapeLinks(page, URL, links, visited)
-        # printJSON(links)
-        createDomainWorkers()
-        domaincrwlQ.put(URL+ '/site-map') #TODO add option
-        domaincrwlQ.join()
+        if 'threads' not in params:
+            links = scrapeLinks(page, URL, links, visited, 0, math.inf if 'layers' not in params else params['layers'])
+            # printJSON(links)
+        else:
+            createDomainWorkers()
+            domaincrwlQ.put(URL + ('' if 'ext' not in params else params['ext']))
+            domaincrwlQ.join()
         print('Found ',len(visited.keys()), ' Links')
         print("---URL scraping time %s seconds ---" % (time.time() - start_time))
 
