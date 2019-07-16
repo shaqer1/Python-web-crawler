@@ -1,26 +1,26 @@
 # Multi threading image crawler in python 3
-Find all the images from a website and download to your project folder. Purpose of this project is to learning coding in Python. Please do not use it to your production server yet.
+Find all the images/links/table classes from a website and download to your project folder. More tags and links to fetch can be added as well
 
+## Features
+- Multithreaded
+- Preserves data fetched in every run for faster results
+- fetches URLS on domain recursively/through threads
 
-This code is to demonstrate the flow of the work. Please run main.py code because threading are used there. So program will be completed lot faster than this one.
+### Requirements
 
+- Python3
 
-## Usage
-
-### Linux
-
-- Fetch all 'dev.edwards.com/gb' image urls
+### Usage
 
 ```bash
-python3 main.py 'dev.edwards.com/gb'
+python3 ./main.py -u 'https://domain.com/extension' -e 'extension' -l '<delimitor>' -i '<delimitor>'
 ```
 
-### Windows
-
-- Install python3
-- Drag main.py to cmd pass first argument as URL endpoint no http or https
-- Example below
+### Options
 
 ```bash
-./main.py 'dev.edwards.com/gb'
+-e: Endpoint to fetch links (if applicable) If not provided it recursively fetches urls to crawl
+-u: Base URL
+-l: Fetch links which don't have the following delimitor
+-i: Fetch images which don't have the following delimitor
 ```
