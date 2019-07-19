@@ -5,6 +5,23 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: layer1 main.py File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://dev.edwards.com/gb",
+                "-ext",
+                "/site-map",
+                "-layers",
+                "1",
+                "-f",
+                "mktoForm",
+            ],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: tag1 main.py run File",
             "type": "python",
             "request": "launch",

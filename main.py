@@ -265,17 +265,18 @@ if __name__ == '__main__':
         if 'threads' not in params:
             links = scrapeLinks(page, URL, links, visited, 0, math.inf if 'layers' not in params else int(params['layers']))
             # printJSON(links)
+            print('Found ',len(links), ' Links')
         else:
             createDomainWorkers()
             domaincrwlQ.put(URL + ('' if 'ext' not in params else params['ext']))
             domaincrwlQ.join()
-        print('Found ',len(visited.keys()), ' Links')
+            print('Found ',len(visited.keys()), ' Links')
+            links = list(visited.keys())
         print("---URL scraping time %s seconds ---" % (time.time() - start_time))
 
 
     start_time = time.time()
 
-    links = list(visited.keys())
     # GB
     if 'e' in params and params['e']=='gb':
         links = {
