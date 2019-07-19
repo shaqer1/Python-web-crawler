@@ -22,6 +22,8 @@ python3 ./main.py -u 'https://domain.com/extension' -e 'extension' -l '<delimito
 -e: Endpoint to fetch links (if applicable) If not provided it recursively fetches urls to crawl #TODO remove
 -u: Base URL
 -l: Fetch links which don't have the following delimitor
+-tag: params: <tag> <attr> <filter>, fetches tag with attribute filtered by <filter> 
+-child: params: "tag1":"attr1"-"tag2":"attr2" used with -tag to fetch specific tag's attribute value
 -i: Fetch images which don't have the following delimitor
 -threads: whether to use threads and how many
 -ext: extension on domain to start with appended to base in beginning

@@ -31,8 +31,10 @@
             "args": [
                 "-u",
                 "https://dev.edwards.com/gb",
-                "-e",
-                "gb",
+                "-threads",
+                "4",
+                "-ext",
+                "/site-map",
                 "-tag",
                 "div",
                 "class",
@@ -52,8 +54,8 @@
                 "https://dev.edwards.com/gb",
                 "-e",
                 "gb",
-                "-i",
-                "qwertyuioiop",
+                "-f",
+                "mktoForm",
             ],
             "console": "integratedTerminal"
         },

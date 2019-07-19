@@ -55,7 +55,7 @@ class Tag:
 
             return self.tags
         except Exception as e:
-            print(e, 'in tag.py')
+            print(e, 'in tag.py', self.page_url)
             return self.tags
 
     def addTagMap(self, tagMap):

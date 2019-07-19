@@ -73,8 +73,6 @@ if __name__ == '__main__':
                     linksFound = filterURL(page.fetch_links(""), URL)
                     visited[page.page_url] = page.html_string
                     # l1 = domaincrwlQ.qsize() +len(visited)+1
-                    with lock:
-                        print(threading.current_thread().name + ' fetched URL:' + link, 'found', domaincrwlQ.qsize() +len(visited)+1, 'visited', len(visited))
                     
                     for item in linksFound:#TODO concurrency error
                         item = item.strip()
@@ -83,6 +81,8 @@ if __name__ == '__main__':
                         if item not in domaincrwlQ.queue and item not in visited and item not in domaincrwlCurrQ:
                             domaincrwlQ.put(item)
                     
+                    with lock:
+                        print(threading.current_thread().name + ' fetched URL:' + link, 'found', domaincrwlQ.qsize() +len(visited)+1, 'visited', len(visited))
                     checkUnique(visited)
                     # if l1!=(domaincrwlQ.qsize() +len(visited)+1):
                     #     print('found', domaincrwlQ.qsize() +len(visited)+1, 'visited', len(visited))     
@@ -91,7 +91,7 @@ if __name__ == '__main__':
                 if domaincrwlQ.empty():
                     break
             except Exception as e:
-                print(e.args)
+                print(e.args, link)
                 domaincrwlQ.task_done()
                 continue
 
@@ -163,7 +163,7 @@ if __name__ == '__main__':
                     if(link in visited):
                         html = visited[link]
                     forms = filterForms(form.fetch_links(html), params['f']) # mktoForm
-                    visited[link] = table.html_string
+                    visited[link] = form.html_string
 
                 if 'tag' in params:
                     tag = Tag(URL, link, params['tag'][0], params['tag'][1])
@@ -209,7 +209,7 @@ if __name__ == '__main__':
                 if queue.empty():
                     break
             except Exception as e:
-                print(e)
+                print(e, link)
                 queue.task_done()
                 continue
 
