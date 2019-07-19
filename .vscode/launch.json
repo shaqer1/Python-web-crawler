@@ -4,13 +4,78 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "name": "Python: tag1 main.py run File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://www.edwards.com/gb",
+                "-threads",
+                "4",
+                "-tag",
+                "div",
+                "class",
+                "custom-banner-container",
+                "-child",
+                "\"img\":\"src\""
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: tag main.py run File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://dev.edwards.com/gb",
+                "-e",
+                "gb",
+                "-tag",
+                "div",
+                "class",
+                "has-banner",
+                "-child",
+                "\"img\":\"src\"-\"source\":\"srcset\""
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: main.py run File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://dev.edwards.com/gb",
+                "-e",
+                "gb",
+                "-i",
+                "qwertyuioiop",
+            ],
+            "console": "integratedTerminal"
+        },
         {
             "name": "Python: main.py File",
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/main.py",
-            "args": ["-u","https://dev.edwards.com/gb","-e","gb","-l","/gb/","-i","/sites/4/"],
+            "args": [
+                "-u",
+                "https://dev.edwards.com/gb",
+                "-threads",
+                "1",
+                "-ext",
+                "/site-map",
+                "-l",
+                "/gb/",
+                "-i",
+                "/sites/4/",
+                "layers",
+                "1"
+            ],
             "console": "integratedTerminal"
         }
     ]

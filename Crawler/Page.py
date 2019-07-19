@@ -52,7 +52,7 @@ class Page:
         self.link.save()
 
     def save_links(self):
-        self.fetch_links()
+        self.fetch_links("")
         self.save()
 
     def get_base_url(self) -> object:

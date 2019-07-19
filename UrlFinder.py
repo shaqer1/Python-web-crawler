@@ -1,6 +1,12 @@
 from html.parser import HTMLParser
+from multiprocessing import Pool
 import urllib.parse
+import wget
+import tempfile
+from requests_html import HTMLSession
 import functions
+from bs4 import BeautifulSoup
+from selenium import webdriver
 from Crawler.PageUrl import PageUrl
 
 
@@ -64,14 +70,73 @@ class UrlFinder(HTMLParser):
         :rtype: object
         """
         html_string = ''
+        # try:
+        #     resp = wget.download(self.page_url)
+        #     # resp = requests.get(self.page_url, allow_redirects=True)
+        #     html_string = resp
+        # except Exception as e:
+        #     return None
+        # return html_string
+
         try:
+            # driver = webdriver.PhantomJS()
+            # driver.get(self.page_url)
+            # soup = driver
+            #request = urllib.request.Request(self.page_url)
+            # , headers={
+            #     "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
+            #     }
+            # session = HTMLSession()
+            # # r = session.get(self.page_url)
+            # session.browser
+            # def render_html():
+            #     r = session.get(self.page_url)
+            #     r.html.render()
+
+            # t = threading.Thread(target=render_html)
+            # t.start()
+            # r.html.render()
+            # html_string = r.html.html
+            # response = bs(urllib.request.urlopen(self.page_url), 'html.parser')
+            # if 'text/html' in response.getheader('Content-Type'):
+            #     html_bytes = response.read()
+            #     html_string = html_bytes.decode("utf-8")
+
+            # request = urllib.request.Request(self.page_url, headers={
+            #     "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
+            # response = urllib.request.urlopen(request)
+            # soup = BeautifulSoup(response,'lxml')
+            # tfp = tempfile.NamedTemporaryFile(delete=True)
+            # tfp = wget.download(self.page_url)
+            # tfp = open(tfp)
+            # urllib.request.urlretrieve
+            # html_string = ''
+
+            # driver = webdriver.PhantomJS()
+            # driver.get(self.page_url)
+            # p_element = driver.find('form')
+            # print(p_element.text)
+            # if 'text/html' in response.getheader('Content-Type'):
+            #     html_bytes = response.read()
+            #     html_string = html_bytes.decode("utf-8")
+
+            # html_string = soup.find('form')
+
+
+            # -------------------------------Original------------------------------
             request = urllib.request.Request(self.page_url, headers={
                 "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
             response = urllib.request.urlopen(request)
             if 'text/html' in response.getheader('Content-Type'):
                 html_bytes = response.read()
                 html_string = html_bytes.decode("utf-8")
+            # soup = BeautifulSoup(html_string)
+            # div = soup("div", {"class" : "has-banner"})
+            # children = div[0].findChildren ()
+            # print(children)   #### desired output
 
         except Exception as e:
+            print(e)
             return None
         return html_string
+    

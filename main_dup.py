@@ -4,15 +4,10 @@ import threading
 import time
 from queue import Queue
 from Models.Complete.Image import Image
-from Models.Complete.Form import Form
 from Models.Complete.Link import Link
 from Models.Complete.Table import Table
-import math
 
 import functions
-from requests_html import HTMLSession
-from Crawler.Form import Form
-from Crawler.Tag import Tag
 from Crawler.Image import Image
 from Crawler.Link import Link
 from Crawler.Page import Page
@@ -26,31 +21,24 @@ usage = 'usage: TODO'
 if __name__ == '__main__':
     params = {}
 
-    # if len(sys.argv)%2!=1: #TODO add extension for start and baseurl,
-    #     print('wrong number of args', usage)
-    #     quit()
+    if len(sys.argv)%2!=1:
+        print('wrong number of args', usage)
+        quit()
 
     for i in range(len(sys.argv)):
         if('-'==sys.argv[i][0]):
-            if sys.argv[i][1:len(sys.argv)] == 'tag':
-                params[sys.argv[i][1:len(sys.argv)]] = [sys.argv[i+1],sys.argv[i+2],sys.argv[i+3]]
-            else:
-                params[sys.argv[i][1:len(sys.argv)]]=sys.argv[i+1]
-            
+            params[sys.argv[i][1:len(sys.argv)]]=sys.argv[i+1]
 
     # print(params)
     URL = params['u']
+
     NUMBER_OF_THREADS = 4
-    if 'threads' in params:
-        NUMBER_OF_THREADS = int(params['threads'])
     queue = Queue()
     domaincrwlQ = Queue()
-    domaincrwlCurrQ = set()
     threads = []
     lock = threading.Lock()
-    lock1 = threading.Lock()
 
-    page = Page(URL + ('' if 'ext' not in params else params['ext']))
+    page = Page(URL+ '/site-map')
     links = set()
     visited = {}
 
@@ -64,29 +52,27 @@ if __name__ == '__main__':
     def fetch_links():
         while True:
             try:
-                with lock1:
-                    link = domaincrwlQ.get()
-                    domaincrwlCurrQ.add(link)
+                link = domaincrwlQ.get()
                 page = Page(link)
 
                 if page.page_url not in visited:
                     linksFound = filterURL(page.fetch_links(""), URL)
                     visited[page.page_url] = page.html_string
-                    # l1 = domaincrwlQ.qsize() +len(visited)+1
+                    l1 = domaincrwlQ.qsize() +len(visited)+1
                     with lock:
-                        print(threading.current_thread().name + ' fetched URL:' + link, 'found', domaincrwlQ.qsize() +len(visited)+1, 'visited', len(visited))
+                        print(threading.current_thread().name + ' fetched URL:' + link, 'found', domaincrwlQ.qsize() +len(visited)+1)
                     
-                    for item in linksFound:#TODO concurrency error
+                    for item in linksFound:
                         item = item.strip()
-                        if item[-1]=='/':
+                        if item not in domaincrwlQ.queue and item not in visited:
+                            if item[-1]=='/':
                                 item=item[0:-1]
-                        if item not in domaincrwlQ.queue and item not in visited and item not in domaincrwlCurrQ:
                             domaincrwlQ.put(item)
                     
                     checkUnique(visited)
                     # if l1!=(domaincrwlQ.qsize() +len(visited)+1):
                     #     print('found', domaincrwlQ.qsize() +len(visited)+1, 'visited', len(visited))     
-                domaincrwlCurrQ.remove(link)
+                               
                 domaincrwlQ.task_done()
                 if domaincrwlQ.empty():
                     break
@@ -130,9 +116,6 @@ if __name__ == '__main__':
 
                 linksOBJ = []
                 images = []
-                tables = []
-                tags = []
-                forms = []
                 
                 if 'i' in params:
                     img = Image(link) #TODO add a param for html
@@ -151,32 +134,15 @@ if __name__ == '__main__':
                     visited[link] = linkOBJ.html_string
                     linksOBJ = filterNonLinks(linksOBJ, params['l'])
 
-                if 't' in params:
-                    table = Table(link) #TODO add a param for html
-                    if(link in visited):
-                        html = visited[link]
-                    tables = table.fetch_links(html)
-                    visited[link] = table.html_string
 
-                if 'f' in params:
-                    form = Form(link) #TODO add a param for html
-                    if(link in visited):
-                        html = visited[link]
-                    forms = filterForms(form.fetch_links(html), params['f']) # mktoForm
-                    visited[link] = table.html_string
-
-                if 'tag' in params:
-                    tag = Tag(URL, link, params['tag'][0], params['tag'][1])
-                    if(link in visited):
-                        html = visited[link]
-                    if 'child' in params:
-                        tagMap = parseArgs(params['child'])
-                        tag.addTagMap(tagMap)
-                        tag.addTagMapQuery(params['tag'][2])
-                    tags = tag.fetch_links(html)
+                # table = Table(link) #TODO add a param for html
+                # if(link in visited):
+                    # html = visited[link]
+                # tables = table.fetch_links(html)
+                # visited[link] = table.html_string
 
                 with lock:
-                    if(len(linksOBJ)>0 or len(images)>0 or len(tables) > 0 or len(forms)>0 or len(tags)>0):
+                    if(len(linksOBJ)>0 or len(images)>0):
                         print(threading.current_thread().name + ' fetched URL:' + link)
 
                     if(len(linksOBJ)>0):
@@ -186,56 +152,36 @@ if __name__ == '__main__':
                     if(len(images)>0):
                         print('\n\n------Images-----')
                         printJSON(images)
-                    
-                    if(len(tables)> 0):
-                        print('\n\n------Tables class-----')
-                        printJSON(tables)
-                    
-                    if(len(forms)> 0):
-                        print('\n\n------Forms id-----')
-                        printJSON(forms)
-                    
-                    if(len(tags)> 0):
-                        print('\n\n------Tags in child id-----')
-                        printJSON(tags)
 
-                    if(len(linksOBJ)>0 or len(images)>0 or len(tables) > 0 or len(forms)>0 or len(tags)>0):
+                    if(len(linksOBJ)>0 or len(images)>0):
                         print('END\n\n')
 
                 # down = Download(links=images, path=functions.get_folder_name(link))
                 # down.start()
 
+                # print('\n\n------Tables class-----')
+                # if(len(tables)> 0):
+                #     printJSON(tables)
+
+
                 queue.task_done()
                 if queue.empty():
                     break
-            except Exception as e:
-                print(e)
+            except:
                 queue.task_done()
                 continue
 
-    def parseArgs(argsStr):
-        tagMap = {}
-        # argsStr = argsStr.replace('{','')
-        #  argsStr = argsStr.replace('}','')
-        args = argsStr.split('-')
-        for i in args:
-            pairs = i.split(':')
-            tagMap[pairs[0].replace('\"','')] = pairs[1].replace('\"','')
-        
-        return tagMap
-            
-
-    def scrapeLinks(page, URL, links, visited, count, final):
-        if page.page_url not in visited and count < final:
+    def scrapeLinks(page, URL, links, visited):
+        if page.page_url not in visited:
             l1 = len(links)
-            linksFound = filterURL(page.fetch_links(""), URL)
+            linksFound = filterURL(page.fetch_links(), URL)
             links = links.union(linksFound)
             visited[page.page_url] = page.html_string
             if l1 == len(links):
                 return links
             print('found', len(links), 'visited', len(visited))
             for link in links:
-                links = scrapeLinks(Page(link), URL, links, visited, count+1, final)
+                links = scrapeLinks(Page(link), URL, links, visited)
             return links
         return links
     
@@ -250,25 +196,14 @@ if __name__ == '__main__':
     
     def filterNonLinks(links, delim):
         return [ x for x in set(links) if delim not in x ]
-    
-    def filterForms(links, delim):
-        return [ x for x in set(links) if delim in x ]
-
-    
-    # session = HTMLSession()
-    # r = session.get(page.page_url)
-    # #session.browser
-    # r.html.render()
         
-    if 'e' not in params:#TODO comment out
+    if 'e' not in params:
         start_time = time.time()
-        if 'threads' not in params:
-            links = scrapeLinks(page, URL, links, visited, 0, math.inf if 'layers' not in params else int(params['layers']))
-            # printJSON(links)
-        else:
-            createDomainWorkers()
-            domaincrwlQ.put(URL + ('' if 'ext' not in params else params['ext']))
-            domaincrwlQ.join()
+        # links = scrapeLinks(page, URL, links, visited)
+        # printJSON(links)
+        createDomainWorkers()
+        domaincrwlQ.put(URL+ '/site-map') #TODO add option
+        domaincrwlQ.join()
         print('Found ',len(visited.keys()), ' Links')
         print("---URL scraping time %s seconds ---" % (time.time() - start_time))
 
@@ -392,7 +327,6 @@ if __name__ == '__main__':
         'https://dev.edwards.com/gb/edwards-lunch-symposium-the-esicm-lives-congress-2015/',
         'https://dev.edwards.com/gb/ehm-guidelines-and-reporting-obligations/',
         'https://dev.edwards.com/gb/esicm2016/',
-        'https://dev.edwards.com/gb/etpage/',
         'https://dev.edwards.com/gb/forms/',
         'https://dev.edwards.com/gb/forms/productcategorypicker/',
         'https://dev.edwards.com/gb/forms/request-a-copy-of-sepsis-bundle-guidelines-overview/',
@@ -503,7 +437,6 @@ if __name__ == '__main__':
 
     if 'e' in params and params['e']=='cr':
         links = {
-        'https://dev.edwards.com/cr/404-page-test/',
         'https://dev.edwards.com/cr/aboutus/',
         'https://dev.edwards.com/cr/aboutus/accesshealthcare/',
         'https://dev.edwards.com/cr/aboutus/pastgrant/',

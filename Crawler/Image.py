@@ -56,3 +56,4 @@ class Image:
     def update_link(self):
         self.link.remove(self.page_url)
         self.link.save()
+    
