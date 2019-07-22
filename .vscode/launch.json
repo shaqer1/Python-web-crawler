@@ -5,6 +5,29 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: csv banner images File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://www.edwards.com/gb",
+                "-e",
+                "gb",
+                "-tag",
+                "div",
+                "class",
+                "custom-banner-container",
+                "-child",
+                "\"img\":\"src\"",
+                "-csv",
+                "gbBannerImages.csv",
+                "-filterBase",
+                "https://edwardsprod.blob.core.windows.net"
+            ], //C:\Users\Shafay\Downloads\Python-web-crawler-master\Python-web-crawler-master\main.py -u https://www.edwards.com/gb -e gb -tag div class custom-banner-container -child "img":"src" -csv gbBannerImages.csv -filterBase https://edwardsprod.blob.core.windows.net
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: layer1 main.py File",
             "type": "python",
             "request": "launch",

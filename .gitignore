@@ -40,3 +40,7 @@ Models/Complete/__pycache__/Image.cpython-37.pyc
 Models/Queue/__pycache__/Tag.cpython-37.pyc
 Models/Queue/__pycache__/Form.cpython-37.pyc
 __pycache__/UrlFinder.cpython-37.pyc
+gbBannerImages.csv
+gbImagesFiltered.txt
+GBLinks
+runWithHTML

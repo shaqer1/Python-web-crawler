@@ -19,7 +19,7 @@ class Tag:
         urlres = urllib.parse.urlparse(page_url)
         self.base_url = base_url
         self.scheme = urlres.scheme
-        self.tags = set()
+        self.tags = []
 
     def add(self, link):
         full_url = self.sanitize_url(link)
@@ -48,7 +48,7 @@ class Tag:
                     for (tag, attr) in self.tagMap.items():
                         for i in children:
                             if i.name == tag and attr in i.attrs:
-                                self.tags.add(urllib.parse.urljoin(self.scheme + "://" + self.base_url, i.attrs[attr]))
+                                self.tags.append(urllib.parse.urljoin(self.scheme + "://" + self.base_url, i.attrs[attr]))
             else:
                 self.tags = tag_finder.get_values()
                 tag_finder.feed('<html></html>' if  self.html_string == None else self.html_string)

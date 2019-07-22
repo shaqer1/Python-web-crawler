@@ -1,12 +1,7 @@
 from html.parser import HTMLParser
-from multiprocessing import Pool
 import urllib.parse
-import wget
-import tempfile
-from requests_html import HTMLSession
 import functions
 from bs4 import BeautifulSoup
-from selenium import webdriver
 from Crawler.PageUrl import PageUrl
 
 
@@ -136,7 +131,7 @@ class UrlFinder(HTMLParser):
             # print(children)   #### desired output
 
         except Exception as e:
-            print(e)
+            print('\n', e, 'link', self.page_url, '\n')
             return None
         return html_string
     
