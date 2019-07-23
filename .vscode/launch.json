@@ -119,7 +119,7 @@
                 "/gb/",
                 "-i",
                 "/sites/4/",
-                "layers",
+                "-layers",
                 "1"
             ],
             "console": "integratedTerminal"

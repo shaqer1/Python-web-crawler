@@ -22,6 +22,22 @@ from Image.Download import Download
 
 usage = 'usage: TODO'
 
+PARAMTAGS = [
+    'u',
+    't',
+    'e',
+    'ext',
+    'threads',
+    'f',
+    'tag',
+    'child',
+    'csv',
+    'i',
+    'l',
+    'filterBase',
+    'layers'
+]
+
 if __name__ == '__main__':
     params = {}
 
@@ -31,10 +47,14 @@ if __name__ == '__main__':
 
     for i in range(len(sys.argv)):
         if('-'==sys.argv[i][0]):
-            if sys.argv[i][1:len(sys.argv)] == 'tag':
-                params[sys.argv[i][1:len(sys.argv)]] = [sys.argv[i+1],sys.argv[i+2],sys.argv[i+3]]
+            if sys.argv[i][1:len(sys.argv)] in PARAMTAGS:
+                if sys.argv[i][1:len(sys.argv)] == 'tag':
+                    params[sys.argv[i][1:len(sys.argv)]] = [sys.argv[i+1],sys.argv[i+2],sys.argv[i+3]]
+                else:
+                    params[sys.argv[i][1:len(sys.argv)]]=sys.argv[i+1]
             else:
-                params[sys.argv[i][1:len(sys.argv)]]=sys.argv[i+1]
+                print(usage)
+                quit()
             
 
     # print(params)
@@ -117,7 +137,6 @@ if __name__ == '__main__':
             t.start()
 
     def printJSON(imagesJSON):
-        # print('\n\nPrinting array')
         for x in imagesJSON:
             print("%s" % x)
 
@@ -137,7 +156,7 @@ if __name__ == '__main__':
                 forms = []
                 
                 if 'i' in params:
-                    img = Image(link) #TODO add a param for html
+                    img = Image(link) 
                     if(link in visited):
                         html = visited[link]
                     images = img.fetch_links(html)
@@ -154,17 +173,17 @@ if __name__ == '__main__':
                     linksOBJ = filterNonLinks(linksOBJ, params['l'])
 
                 if 't' in params:
-                    table = Table(link) #TODO add a param for html
+                    table = Table(link)
                     if(link in visited):
                         html = visited[link]
                     tables = table.fetch_links(html)
                     visited[link] = table.html_string
 
                 if 'f' in params:
-                    form = Form(link) #TODO add a param for html
+                    form = Form(link) 
                     if(link in visited):
                         html = visited[link]
-                    forms = filterForms(form.fetch_links(html), params['f']) # mktoForm
+                    forms = filterForms(form.fetch_links(html), params['f'])
                     visited[link] = form.html_string
 
                 if 'tag' in params:
