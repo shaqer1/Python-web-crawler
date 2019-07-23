@@ -13,6 +13,7 @@ class Form:
 
         self.page_url = page_url
         urlres = urllib.parse.urlparse(page_url)
+        self.scheme = urlres.scheme
         self.base_url = urlres.netloc
         self.forms = set()
 

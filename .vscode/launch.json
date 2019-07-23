@@ -91,11 +91,15 @@
             "program": "${workspaceFolder}/main.py",
             "args": [
                 "-u",
-                "https://dev.edwards.com/gb",
-                "-e",
-                "gb",
+                "https://dev.edwards.com/ch-en",
+                "-ext",
+                "/site-map",
+                "-layers",
+                "1",
                 "-f",
                 "mktoForm",
+                "-csv",
+                "mkToFormCH-EN.csv"
             ],
             "console": "integratedTerminal"
         },

@@ -188,6 +188,9 @@ if __name__ == '__main__':
                                 filterB = ''
                             with open(params['csv'], "a") as myfile:
                                 myfile.write(generateCSV(link, tags, filterB))
+                        if(len(forms)> 0):
+                            with open(params['csv'], "a") as myfile:
+                                myfile.write(generateCSV(link, forms, form.scheme + "://" + form.base_url))
                     else:
                         if(len(linksOBJ)>0 or len(images)>0 or len(tables) > 0 or len(forms)>0 or len(tags)>0):
                             print(threading.current_thread().name + ' fetched URL:' + link)
@@ -976,8 +979,7 @@ if __name__ == '__main__':
         'https://dev.edwards.com/ch-en/patients/patient-information/',
         'https://dev.edwards.com/ch-en/patients/patient-voice/',
         'https://dev.edwards.com/ch-en/patients/patient-voice-form/',
-        'https://dev.edwards.com/ch-en/site-map/',
-        'https://dev.edwards.com/ch-en/xvrdms-8179/'
+        'https://dev.edwards.com/ch-en/site-map/'
         }
 
     if 'e' in params and params['e']=='cr':
