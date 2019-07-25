@@ -47,7 +47,7 @@ class Tag:
                     # print(children)
                     for (tag, attr) in self.tagMap.items():
                         for i in children:
-                            if i.name == tag and attr in i.attrs:
+                            if i.name == tag and (attr!='' or attr in i.attrs):
                                 self.tags.append(urllib.parse.urljoin(self.scheme + "://" + self.base_url, i.attrs[attr]))
             else:
                 self.tags = tag_finder.get_values()
