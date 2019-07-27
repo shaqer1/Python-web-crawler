@@ -24,14 +24,14 @@ class Page:
             self.link.add(full_url)
         return self
 
-    def fetch_links(self, html):
+    def fetch_links(self, html, authSession=None):
         """
         Get all the anchor tag url from the website
         :return:
         """
         url_finder = LinkFinder(self.page_url)
         if(html == ""):
-            self.html_string = url_finder.html_string()
+            self.html_string = url_finder.html_string(authSession=authSession)
         else:
             self.html_string = html
         url_finder.feed( '<html></html>' if  self.html_string == None else self.html_string )

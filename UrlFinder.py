@@ -3,6 +3,9 @@ import urllib.parse
 import functions
 from bs4 import BeautifulSoup
 from Crawler.PageUrl import PageUrl
+from requests import session
+from lxml import html
+
 
 
 class UrlFinder(HTMLParser):
@@ -58,7 +61,7 @@ class UrlFinder(HTMLParser):
     def error(self, message):
         pass
 
-    def html_string(self) -> object:
+    def html_string(self, authSession=None) -> object:
         """
         Fetch html from url and return as Html String
         :param page_url:
@@ -125,10 +128,57 @@ class UrlFinder(HTMLParser):
             if 'text/html' in response.getheader('Content-Type'):
                 html_bytes = response.read()
                 html_string = html_bytes.decode("utf-8")
-            # soup = BeautifulSoup(html_string)
-            # div = soup("div", {"class" : "has-banner"})
-            # children = div[0].findChildren ()
-            # print(children)   #### desired output
+                tree = html.fromstring(html_string)
+                try:
+                    authenticity_token = list(set(tree.xpath("//input[@name='__RequestVerificationToken']/@value")))[0]
+                except Exception as e:
+                    authenticity_token = None
+
+            # check if soup has form action then check payload post response and proceed with 200
+
+            
+            if authenticity_token and authSession:
+                # print('Authenticating: ',self.page_url)
+                html_string = authSession.getPage(self.page_url)
+            # with session() as c:
+            #     result = c.get('https://edwardsuatnewbrand.azurewebsites.net/gb/')
+            #     # c.post('https://edwardsuatnewbrand.azurewebsites.net/gb/Users/Account/AccessDenied?ReturnUrl=/gb/', data=payload)
+            #     tree = html.fromstring(result.text)
+            #     authenticity_token = list(set(tree.xpath("//input[@name='__RequestVerificationToken']/@value")))[0]
+                
+
+            #     payload = {
+            #         '__RequestVerificationToken': authenticity_token,
+            #         'userNameOrEmail': 'uafzal@xavor.com',
+            #         'password': 'Xavor123',
+            #         'rememberMe': True
+            #     }
+
+
+            #     header = {
+            #         'Connection': 'keep-alive',
+            #         'Cache-Control': 'max-age=0',
+            #         'Origin': 'http://edwardsuatnewbrand.azurewebsites.net',
+            #         'Upgrade-Insecure-Requests': '1',
+            #         'Content-Type': 'application/x-www-form-urlencoded',
+            #         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.142 Safari/537.36',
+            #         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+            #         'Referer': 'http://edwardsuatnewbrand.azurewebsites.net/gb/Users/Account/AccessDenied?ReturnUrl=/gb/',
+            #         'Accept-Encoding': 'gzip, deflate',
+            #         'Accept-Language': 'en-GB,en-US;q=0.9,en;q=0.8',
+            #         'Cookie': 'ARRAffinity=cda73737958c13848f3c08e4f40b30e22baa9f5cf321a34898f98f73ec3b8272; _ga=GA1.3.63132184.1564212695; _gid=GA1.3.777391251.1564212695; _gat_UA-75750319-1=1'
+            #     }
+
+            #     result = c.post(
+            #                     'http://edwardsuatnewbrand.azurewebsites.net/gb/Users/Account/LogOn?ReturnUrl=/gb/', 
+            #                     data = payload,
+            #                     headers = header
+            #                 )
+
+            #     response = c.get('https://edwardsuatnewbrand.azurewebsites.net/gb/')
+
+            #     # print('response.headers',response.headers)
+            #     print('response.text',response.text)
 
         except Exception as e:
             print('\n', e, 'link', self.page_url, '\n')

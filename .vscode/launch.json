@@ -5,6 +5,30 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python: auth File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "args": [
+                "-u",
+                "https://edwardsuatnewbrand.azurewebsites.net/gb",
+                "-tag",
+                "div",
+                "class",
+                "custom-banner-container",
+                "-ext",
+                "/sitemap",
+                "-layers",
+                "1",
+                "-auth",
+                "auth.json",
+                "__RequestVerificationToken",
+                "-child",
+                "\"img\":\"src\""
+            ], //C:\Users\Shafay\Downloads\Python-web-crawler-master\Python-web-crawler-master\main.py -u https://www.edwards.com/gb -e gb -tag div class custom-banner-container -child "img":"src" -csv gbBannerImages.csv -filterBase https://edwardsprod.blob.core.windows.net
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Python: csv banner images File",
             "type": "python",
             "request": "launch",

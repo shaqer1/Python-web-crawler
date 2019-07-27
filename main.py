@@ -18,6 +18,8 @@ from Crawler.Page import Page
 from Crawler.Table import Table
 from Image import Save
 from Image.Download import Download
+from Auth.AuthSession import AuthSession
+import json
 
 
 usage = 'usage: TODO'
@@ -32,6 +34,7 @@ PARAMTAGS = [
     'tag',
     'child',
     'csv',
+    'auth',
     'i',
     'l',
     'filterBase',
@@ -50,6 +53,8 @@ if __name__ == '__main__':
             if sys.argv[i][1:len(sys.argv)] in PARAMTAGS:
                 if sys.argv[i][1:len(sys.argv)] == 'tag':
                     params[sys.argv[i][1:len(sys.argv)]] = [sys.argv[i+1],sys.argv[i+2],sys.argv[i+3]]
+                elif sys.argv[i][1:len(sys.argv)] == 'auth':
+                    params[sys.argv[i][1:len(sys.argv)]] = [sys.argv[i+1],sys.argv[i+2]]
                 else:
                     params[sys.argv[i][1:len(sys.argv)]]=sys.argv[i+1]
             else:
@@ -64,6 +69,12 @@ if __name__ == '__main__':
         NUMBER_OF_THREADS = int(params['threads'])
     if 'csv' in params:
         open(params['csv'], "w").close()
+    if 'auth' in params:
+        with open(params['auth'][0]) as config_file:
+            authConfig = json.load(config_file)
+            authSession = AuthSession(authConfig, params['auth'][1])
+            authSession.createSession()
+            print('auth created')
 
     queue = Queue()
     domaincrwlQ = Queue()
@@ -92,7 +103,7 @@ if __name__ == '__main__':
                 page = Page(link)
 
                 if page.page_url not in visited:
-                    linksFound = filterURL(page.fetch_links(""), URL)
+                    linksFound = filterURL(page.fetch_links("", '' if 'auth' not in params else authSession), URL)
                     visited[page.page_url] = page.html_string
                     # l1 = domaincrwlQ.qsize() +len(visited)+1
                     
@@ -159,7 +170,7 @@ if __name__ == '__main__':
                     img = Image(link) 
                     if(link in visited):
                         html = visited[link]
-                    images = img.fetch_links(html)
+                    images = img.fetch_links(html, '' if 'auth' not in params else authSession)
                     visited[link] = img.html_string
                     images = filterNonImages(images, params['i'])
 
@@ -168,7 +179,7 @@ if __name__ == '__main__':
                     linkOBJ = Link(link)
                     if(link in visited):
                         html = visited[link]
-                    linksOBJ = linkOBJ.fetch_links(html)
+                    linksOBJ = linkOBJ.fetch_links(html, '' if 'auth' not in params else authSession)
                     visited[link] = linkOBJ.html_string
                     linksOBJ = filterNonLinks(linksOBJ, params['l'])
 
@@ -176,14 +187,14 @@ if __name__ == '__main__':
                     table = Table(link)
                     if(link in visited):
                         html = visited[link]
-                    tables = table.fetch_links(html)
+                    tables = table.fetch_links(html, '' if 'auth' not in params else authSession)
                     visited[link] = table.html_string
 
                 if 'f' in params:
                     form = Form(link) 
                     if(link in visited):
                         html = visited[link]
-                    forms = filterForms(form.fetch_links(html), params['f'])
+                    forms = filterForms(form.fetch_links(html, '' if 'auth' not in params else authSession), params['f'])
                     visited[link] = form.html_string
 
                 if 'tag' in params:
@@ -194,7 +205,7 @@ if __name__ == '__main__':
                         tagMap = parseArgs(params['child'])
                         tag.addTagMap(tagMap)
                         tag.addTagMapQuery(params['tag'][2])
-                    tags = tag.fetch_links(html)
+                    tags = tag.fetch_links(html, '' if 'auth' not in params else authSession)
 
                 with lock:
                     if 'csv' in params:
@@ -273,7 +284,7 @@ if __name__ == '__main__':
     def scrapeLinks(page, URL, links, visited, count, final):
         if page.page_url not in visited and count < final:
             l1 = len(links)
-            linksFound = filterURL(page.fetch_links(""), URL)
+            linksFound = filterURL(page.fetch_links("", '' if 'auth' not in params else authSession), URL)
             links = links.union(linksFound)
             visited[page.page_url] = page.html_string
             if l1 == len(links):

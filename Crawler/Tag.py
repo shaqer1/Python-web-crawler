@@ -27,7 +27,7 @@ class Tag:
             self.tags.add(full_url)
         return self
 
-    def fetch_links(self, html):
+    def fetch_links(self, html, authSession=None):
         """
         Get all the anchor tag url from the website
         :return:
@@ -35,7 +35,7 @@ class Tag:
         try:
             tag_finder = TagFinder(self.page_url, self.tag, self.attr)
             if(html == ""):
-                self.html_string = tag_finder.html_string()
+                self.html_string = tag_finder.html_string(authSession)
             else:
                 self.html_string = html
 
