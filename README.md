@@ -5,6 +5,7 @@ Find all the images/links/table classes from a domain and download to your proje
 - Multithreaded
 - Preserves data fetched in every run for faster results
 - fetches URLS on domain recursively/through threads
+- Basic Auth for pages
 
 ### Requirements
 
