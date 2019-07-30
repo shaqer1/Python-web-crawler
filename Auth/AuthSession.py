@@ -4,10 +4,11 @@ from lxml import html
 
 
 class AuthSession():
-    def __init__(self, authJSON, authKey):
+    def __init__(self, authJSON, authKey, alwaysAuth):
         self.authJSON = authJSON
         self.parseConfig(authJSON)
         self.authKey = authKey
+        self.alwaysAuth = True if alwaysAuth == 'authA' else False
         self.session = requests.Session()
         self.result = None
         self.authenticity_token = ''

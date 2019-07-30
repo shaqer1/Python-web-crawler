@@ -50,3 +50,7 @@ auth.json
 ch-enlinks.json
 crlinks.json
 gbLinks.json
+deLinksCrawlSitemap.csv
+itLinksCrawlSitemap.csv
+esLinksCrawlSitemap.csv
+itLinksCrawlSitemap.txt

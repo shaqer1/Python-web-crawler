@@ -68,77 +68,27 @@ class UrlFinder(HTMLParser):
         :rtype: object
         """
         html_string = ''
-        # try:
-        #     resp = wget.download(self.page_url)
-        #     # resp = requests.get(self.page_url, allow_redirects=True)
-        #     html_string = resp
-        # except Exception as e:
-        #     return None
-        # return html_string
-
         try:
-            # driver = webdriver.PhantomJS()
-            # driver.get(self.page_url)
-            # soup = driver
-            #request = urllib.request.Request(self.page_url)
-            # , headers={
-            #     "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"
-            #     }
-            # session = HTMLSession()
-            # # r = session.get(self.page_url)
-            # session.browser
-            # def render_html():
-            #     r = session.get(self.page_url)
-            #     r.html.render()
+            authenticity_token = None
+            if authSession and not authSession.alwaysAuth:
+                # -------------------------------Original------------------------------
+                request = urllib.request.Request(self.page_url, headers={
+                    "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
+                response = urllib.request.urlopen(request)
+                if 'text/html' in response.getheader('Content-Type'):
+                    html_bytes = response.read()
+                    html_string = html_bytes.decode("utf-8")
+                    tree = html.fromstring(html_string)
+                    try:
+                        authenticity_token = list(set(tree.xpath("//input[@name='{authKey}']/@value".format(authKey=authSession.authKey))))[0]
+                    except Exception as e:
+                        authenticity_token = None
 
-            # t = threading.Thread(target=render_html)
-            # t.start()
-            # r.html.render()
-            # html_string = r.html.html
-            # response = bs(urllib.request.urlopen(self.page_url), 'html.parser')
-            # if 'text/html' in response.getheader('Content-Type'):
-            #     html_bytes = response.read()
-            #     html_string = html_bytes.decode("utf-8")
-
-            # request = urllib.request.Request(self.page_url, headers={
-            #     "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
-            # response = urllib.request.urlopen(request)
-            # soup = BeautifulSoup(response,'lxml')
-            # tfp = tempfile.NamedTemporaryFile(delete=True)
-            # tfp = wget.download(self.page_url)
-            # tfp = open(tfp)
-            # urllib.request.urlretrieve
-            # html_string = ''
-
-            # driver = webdriver.PhantomJS()
-            # driver.get(self.page_url)
-            # p_element = driver.find('form')
-            # print(p_element.text)
-            # if 'text/html' in response.getheader('Content-Type'):
-            #     html_bytes = response.read()
-            #     html_string = html_bytes.decode("utf-8")
-
-            # html_string = soup.find('form')
-
-
-            # -------------------------------Original------------------------------
-            request = urllib.request.Request(self.page_url, headers={
-                "User-Agent": "Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.27 Safari/537.17"})
-            response = urllib.request.urlopen(request)
-            if 'text/html' in response.getheader('Content-Type'):
-                html_bytes = response.read()
-                html_string = html_bytes.decode("utf-8")
-                tree = html.fromstring(html_string)
-                try:
-                    authenticity_token = list(set(tree.xpath("//input[@name='__RequestVerificationToken']/@value")))[0]
-                except Exception as e:
-                    authenticity_token = None
-
-            # check if soup has form action then check payload post response and proceed with 200
+                # check if soup has form action then check payload post response and proceed with 200
 
             
-            if authenticity_token and authSession:
-                # print('Authenticating: ',self.page_url)
+            if (authenticity_token or authSession.alwaysAuth) and authSession:
+                #print('Authenticating: ',self.page_url)
                 html_string = authSession.getPage(self.page_url)
 
         except Exception as e:
