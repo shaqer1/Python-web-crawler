@@ -18,6 +18,7 @@ class AuthSession():
         self.loginURL = config['loginURL']
         self.authURL = config['authURL']
         self.payload = config['payload']
+        self.logOffUrl = config['logOffUrl']
 
     def createSession(self):
         self.result = self.session.get(self.authURL)

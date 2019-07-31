@@ -87,9 +87,16 @@ class UrlFinder(HTMLParser):
                 # check if soup has form action then check payload post response and proceed with 200
 
             
-            if (authenticity_token or authSession.alwaysAuth) and authSession:
+            if (authenticity_token or authSession.alwaysAuth) and authSession and authSession.logOffUrl not in self.page_url:
                 #print('Authenticating: ',self.page_url)
                 html_string = authSession.getPage(self.page_url)
+
+            #check auth
+            soup = BeautifulSoup(html_string, features="lxml")
+            div = soup('h1', {'class' : 'page-title'})
+            if len(div) > 0 and 'Access Denied' in div[0].text:
+                print('Access Denied')
+            
 
         except Exception as e:
             print('\n', e, 'link', self.page_url, '\n')

@@ -208,6 +208,7 @@ if __name__ == '__main__':
                         tag.addTagMap(tagMap)
                         tag.addTagMapQuery(params['tag'][2])
                     tags = tag.fetch_links(html, '' if 'auth' not in params and 'authA' not in params else authSession)
+                    visited[link] = tag.html_string
 
                 with lock:
                     if 'csv' in params:
