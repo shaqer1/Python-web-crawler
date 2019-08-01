@@ -6,7 +6,7 @@ import Models.Queue.Link
 
 
 class Tag:
-    def __init__(self, base_url, page_url, tag, attr, tagMap = {}, tagMapQ = None):
+    def __init__(self, page_url, tag, attr, tagMap = {}, tagMapQ = None):
 
         self.tag = Models.Queue.Tag.Tag()
         self.link = Models.Queue.Link.Link()
@@ -17,7 +17,7 @@ class Tag:
         self.tagMapQ = tagMapQ
         self.page_url = page_url
         urlres = urllib.parse.urlparse(page_url)
-        self.base_url = base_url
+        self.base_url = urlres.netloc
         self.scheme = urlres.scheme
         self.tags = []
 

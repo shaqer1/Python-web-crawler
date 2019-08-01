@@ -200,7 +200,7 @@ if __name__ == '__main__':
                     visited[link] = form.html_string
 
                 if 'tag' in params:
-                    tag = Tag(URL, link, params['tag'][0], params['tag'][1])
+                    tag = Tag(link, params['tag'][0], params['tag'][1])
                     if(link in visited):
                         html = visited[link]
                     if 'child' in params:
