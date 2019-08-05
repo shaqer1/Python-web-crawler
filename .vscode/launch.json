@@ -33,11 +33,11 @@
             "program": "${workspaceFolder}/main.py",
             "args": [
                 "-u",
-                "https://edwardsuatnewbrand.azurewebsites.net/gb",
+                "https://edwardsuatnewbrand.azurewebsites.net/es",
                 "-ext",
                 "/sitemap",
                 "-authA",
-                "auth.json",
+                "authes.json",
                 "__RequestVerificationToken",
                 "-layers",
                 "1",
@@ -48,7 +48,7 @@
                 "-child",
                 "\"img\":\"src\"",
                 "-csv",
-                "gbBannerImages.csv",
+                "esBannerImages.csv",
                 // "-filterBase",
                 // "https://edwardsprod.blob.core.windows.net"
             ], //C:\Users\Shafay\Downloads\Python-web-crawler-master\Python-web-crawler-master\main.py -u https://www.edwards.com/gb -e gb -tag div class custom-banner-container -child "img":"src" -csv gbBannerImages.csv -filterBase https://edwardsprod.blob.core.windows.net
